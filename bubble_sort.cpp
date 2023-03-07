@@ -29,7 +29,7 @@ int main() {
                 a[j] = a[j+1];
                 a[j+1] = tmp;
 
-                std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sort_bubble" + std::to_string( file_number ) + ".txt").c_str() );
+                std::ofstream file( std::string( "sort_bubble" + std::to_string( file_number ) + ".txt").c_str() );
                 for (int h = 0; h < 100; h++){
                     file << a[h] << std::endl;
                 }

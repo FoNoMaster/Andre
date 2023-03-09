@@ -52,8 +52,8 @@ int main() {
     }
     selectionSort(a, 100, *FN_link);
 
-    for (int i = 0; i < 100; i++){
-        std::cout << a[i] << std::endl;
-    }
-    std::cout << file_number;
+//     for (int i = 0; i < 100; i++){
+//         std::cout << a[i] << std::endl;
+//     }
+//     std::cout << file_number;
 }

@@ -1,7 +1,8 @@
 #!/bin/bash
-g++ bubble_sort.cpp -o bubble
+sort_name=$1
+g++ "$sort_name"_sort.cpp -o sortal
 echo sorting
-./bubble
+./sortal
 echo creating frames
 python3 all_txt_to_png.py
 echo creating gif

@@ -27,8 +27,9 @@ for i in files:
         img.save(image_name)
 
 the_file = files[0][:-5] + "10000.txt"
-test_file = [x+1 for x in range(100)]
-size = len(test_file)
+test_test_file = np.loadtxt(files[0], dtype=int)
+size = len(test_test_file)
+test_file = [x+1 for x in range(size)]
 if size == 100:
     for i in range(100):
         w, h = 960, 540
@@ -55,5 +56,7 @@ if size == 256:
                 img1.rectangle(shape, fill="red", outline="red")
         image_name = the_file[:11] + str(int(the_file[11:-4])+1+i) + ".png"
         img.save(image_name)
+
+
 
 

@@ -19,7 +19,7 @@ int partition (int arr[], int low, int high, int &c){
         if (arr[j] <= pivot){
             i++;
             swap(&arr[i], &arr[j], c);
-            std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sorrt_bubble" + std::to_string( c ) + ".txt").c_str() );
+            std::ofstream file( std::string( "quickk_sort" + std::to_string( c ) + ".txt").c_str() );
             for (int h = 0; h < 100; h++){
                 file << arr[h] << std::endl;
             }
@@ -27,7 +27,7 @@ int partition (int arr[], int low, int high, int &c){
         }
     }
     swap(&arr[i + 1], &arr[high], c);
-    std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sorrt_bubble" + std::to_string( c ) + ".txt").c_str() );
+    std::ofstream file( std::string( "quickk_sort" + std::to_string( c ) + ".txt").c_str() );
     for (int h = 0; h < 100; h++){
         file << arr[h] << std::endl;
     }

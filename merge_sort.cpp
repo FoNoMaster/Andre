@@ -23,7 +23,7 @@ void merge(int *array, int l, int m, int r, int &c) {
             array[k] = larr[i];
             i++;
 
-            std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sort_merge" + std::to_string( c ) + ".txt").c_str() );
+            std::ofstream file( std::string( "sort_mergee" + std::to_string( c ) + ".txt").c_str() );
             for (int h = 0; h < 100; h++){
                 file << array[h] << std::endl;
             }
@@ -40,7 +40,7 @@ void merge(int *array, int l, int m, int r, int &c) {
         array[k] = larr[i];
         i++; k++;
 
-        std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sort_merge" + std::to_string( c ) + ".txt").c_str() );
+        std::ofstream file( std::string( "sort_mergee" + std::to_string( c ) + ".txt").c_str() );
         for (int h = 0; h < 100; h++){
             file << array[h] << std::endl;
         }
@@ -51,7 +51,7 @@ void merge(int *array, int l, int m, int r, int &c) {
         array[k] = rarr[j];
         j++; k++;
 
-        std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sort_merge" + std::to_string( c ) + ".txt").c_str() );
+        std::ofstream file( std::string( "sort_mergee" + std::to_string( c ) + ".txt").c_str() );
         for (int h = 0; h < 100; h++){
             file << array[h] << std::endl;
         }

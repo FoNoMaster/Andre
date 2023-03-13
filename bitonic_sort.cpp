@@ -18,7 +18,7 @@ void bitonicSort(int *arr, int n, int &c) {
                         arr[i] = arr[l];
                         arr[l] = temp;
 
-                        std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sor" + std::to_string( c ) + ".txt").c_str() );
+                        std::ofstream file( std::string( "bitonc_sort" + std::to_string( c ) + ".txt").c_str() );
                         for (int h = 0; h < 256; h++){
                             file << arr[h] << std::endl;
                         }

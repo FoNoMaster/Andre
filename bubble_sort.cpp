@@ -36,7 +36,7 @@ int main() {
             if (a[j] > a[j+1]){
                 swap(&a[j], &a[j+1], *FN_link);
 
-                std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sort_bubble" + std::to_string( file_number ) + ".txt").c_str() );
+                std::ofstream file( std::string( "sort_bubble" + std::to_string( file_number ) + ".txt").c_str() );
                 for (int h = 0; h < 100; h++){
                     file << a[h] << std::endl;
                 }

@@ -22,7 +22,7 @@ void selectionSort(int arr[], int n, int &c) {
                 min_idx = j;
 
         swap(&arr[min_idx], &arr[i], c);
-        std::ofstream file( std::string( "C:\\Users\\12345\\CLionProjects\\huy\\sorrt_bubble" + std::to_string( c ) + ".txt").c_str() );
+        std::ofstream file( std::string( "select_sort" + std::to_string( c ) + ".txt").c_str() );
         for (int h = 0; h < 100; h++){
             file << arr[h] << std::endl;
         }

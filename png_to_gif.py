@@ -19,3 +19,5 @@ frames[0].save(gif_name, format='GIF',
                 append_images=frames[1:],
                 save_all=True,
                 duration=20, loop=0)
+# if you try to ser duration lower, the value might be ignored
+# but i can't guarantee that 20ms is the fastest you can get
